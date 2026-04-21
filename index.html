@@ -6,12 +6,9 @@
 
 <title>ESFF — Equivator Saudi Fintech Fund | SVC Meeting</title>
 
-<!-- ✅ FIXED GOOGLE FONTS -->
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 
 <style>
-/* ===== KEEPING YOUR ORIGINAL DESIGN ===== */
-
 *, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
 
 :root {
@@ -37,6 +34,7 @@ nav {
   justify-content:space-between;
   border-bottom:1px solid rgba(46,207,192,0.2);
   background:rgba(5,15,18,0.9);
+  z-index:1000;
 }
 
 .logo {
@@ -54,6 +52,16 @@ nav {
   align-items:center;
   text-align:center;
   padding-top:120px;
+  position:relative;
+}
+
+/* 🔥 CRITICAL FIX (prevents invisible blocking) */
+.hero::before {
+  content:'';
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  z-index:0;
 }
 
 .hero h1 {
@@ -67,13 +75,21 @@ nav {
   margin:20px 0;
 }
 
-/* BUTTONS */
+/* BUTTONS FIXED */
+.button-group {
+  position:relative;
+  z-index:9999;
+}
+
 .btn {
   padding:14px 28px;
   margin:10px;
   border-radius:6px;
   text-decoration:none;
   font-weight:700;
+  display:inline-block;
+  position:relative;
+  z-index:9999;
 }
 
 .primary {
@@ -125,9 +141,9 @@ footer {
   <p>Equivator Investment Platform — SVC Meeting</p>
 
   <!-- ✅ FIXED BUTTONS -->
-  <div>
-    <a href="pitch-deck.pdf" target="_blank" class="btn-primary">Pitch Deck</a>
-    <a href="playbook.pdf" target="_blank" class="btn-secondary">Playbook</a>
+  <div class="button-group">
+    <a href="pitch-deck.pdf" target="_blank" class="btn primary">Pitch Deck</a>
+    <a href="playbook.pdf" target="_blank" class="btn secondary">Playbook</a>
   </div>
 </section>
 
