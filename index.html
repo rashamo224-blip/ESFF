@@ -1,190 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- saved from url=(0066)file:///Users/rashaabounamah/Downloads/Rhuna/ESFF_SVC_Meeting.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESFF — Equivator Saudi Fintech Fund | SVC Meeting</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-<title>ESFF — Equivator Saudi Fintech Fund | SVC Meeting</title>
+    :root {
+      --bg-deep:    #050F12;
+      --bg-dark:    #071B20;
+      --bg-card:    #0D2A30;
+      --bg-card2:   #0F3038;
+      --teal:       #2ECFC0;
+      --teal-light: #5EEAE0;
+      --teal-dim:   rgba(46,207,192,0.15);
+      --teal-border:rgba(46,207,192,0.25);
+      --white:      #FFFFFF;
+      --text-muted: #8AABB0;
+      --text-body:  #C8DDE0;
+      --gold:       #E8C97A;
+    }
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    html { scroll-behavior: smooth; }
 
-<style>
-*, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg-deep);
+      color: var(--white);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
 
-:root {
-  --bg-deep:#050F12;
-  --bg-card:#0D2A30;
-  --teal:#2ECFC0;
-  --white:#fff;
-  --text-muted:#8AABB0;
-}
+    /* ── NAVBAR ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 18px 48px;
+      background: rgba(5,15,18,0.85);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--teal-border);
+    }
+    .nav-logo img {
+      height: 32px;
+      width: auto;
+      display: block;
+    }
+    .nav-badge {
+      font-size: 11px; font-weight: 600; letter-spacing: 1.5px;
+      text-transform: uppercase; color: var(--teal);
+      border: 1px solid var(--teal-border);
+      padding: 4px 12px; border-radius: 20px;
+    }
+    .nav-right { display: flex; align-items: center; gap: 20px; }
+    .svc-logo-wrap {
+      display: flex; align-items: center; gap: 10px;
+      font-size: 11px; color: var(--text-muted); letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    .svc-logo-wrap img {
+      height: 28px; filter: brightness(0) invert(1) opacity(0.85);
+    }
+    .svc-logo-text {
+      font-weight: 800; font-size: 18px; letter-spacing: 1px;
+      color: var(--white);
+    }
 
-body {
-  font-family:'Inter', sans-serif;
-  background:var(--bg-deep);
-  color:var(--white);
-}
-
-/* NAV */
-nav {
-  position:fixed;
-  width:100%;
-  padding:20px 40px;
-  display:flex;
-  justify-content:space-between;
-  border-bottom:1px solid rgba(46,207,192,0.2);
-  background:rgba(5,15,18,0.9);
-  z-index:1000;
-}
-
-.logo {
-  font-family:'Playfair Display', serif;
-  font-weight:700;
-  font-size:20px;
-}
-
-/* HERO */
-.hero {
-  min-height:100vh;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-  padding-top:120px;
-  position:relative;
-}
-
-/* 🔥 CRITICAL FIX (prevents invisible blocking) */
-.hero::before {
-  content:'';
-  position:absolute;
-  inset:0;
-  pointer-events:none;
-  z-index:0;
-}
-
-.hero h1 {
-  font-size:60px;
-}
-
-.hero h1 span { color:var(--teal); }
-
-.hero p {
-  color:var(--text-muted);
-  margin:20px 0;
-}
-
-/* BUTTONS FIXED */
-.button-group {
-  position:relative;
-  z-index:9999;
-}
-
-.btn {
-  padding:14px 28px;
-  margin:10px;
-  border-radius:6px;
-  text-decoration:none;
-  font-weight:700;
-  display:inline-block;
-  position:relative;
-  z-index:9999;
-}
-
-.primary {
-  background:var(--teal);
-  color:black;
-}
-
-.secondary {
-  border:1px solid white;
-  color:white;
-}
-
-/* SECTIONS */
-section {
-  padding:80px 40px;
-  max-width:1100px;
-  margin:auto;
-}
-
-.card {
-  background:var(--bg-card);
-  padding:20px;
-  border-radius:10px;
-  margin:10px 0;
-}
-
-/* FOOTER */
-footer {
-  padding:40px;
-  text-align:center;
-  border-top:1px solid rgba(46,207,192,0.2);
-  color:var(--text-muted);
-}
-</style>
-</head>
-
-<body>
-
-<!-- NAV -->
-<nav>
-  <div class="logo">
-    EQUIVATOR<sup style="color:#2ECFC0;font-size:10px;">®</sup>
-  </div>
-</nav>
-
-<!-- HERO -->
-<section class="hero">
-  <h1>Saudi FinTech <span>Fund</span></h1>
-  <p>Equivator Investment Platform — SVC Meeting</p>
-
-  <!-- ✅ FIXED BUTTONS -->
-  <div class="button-group">
-    <a href="pitch-deck.pdf" target="_blank" class="btn primary">Pitch Deck</a>
-    <a href="playbook.pdf" target="_blank" class="btn secondary">Playbook</a>
-  </div>
-</section>
-
-<!-- FUND OVERVIEW -->
-<section>
-  <h2>Fund Overview</h2>
-  <div class="card">Fund Size: $100M</div>
-  <div class="card">Stage: Pre-Series A → Series A</div>
-  <div class="card">Focus: FinTech / GCC / Saudi Expansion</div>
-</section>
-
-<!-- STRATEGY -->
-<section>
-  <h2>Strategy</h2>
-  <p>
-    Private equity-driven fintech strategy focused on operational intervention,
-    profitability acceleration, and Saudi market expansion.
-  </p>
-</section>
-
-<!-- PIPELINE -->
-<section>
-  <h2>Pipeline</h2>
-  <div class="card">100+ deals screened annually</div>
-  <div class="card">~37 pipeline deals</div>
-  <div class="card">20 shortlisted</div>
-  <div class="card">2–5% conversion</div>
-</section>
-
-<!-- LEGAL -->
-<section>
-  <h2>Legal & Structure</h2>
-  <p>
-    CMA-approved private investment fund managed by Apex FundRock.
-  </p>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  Equivator © 2026 — Saudi-based investment firm executing PE strategies
-</footer>
-
-</body>
-</html>
+    /* ── HERO ── */
+    .hero {
+      min-height: 100vh;
+      display: flex; flex-direction: column; justify-content: center; align-items: center;
+      text-align: center;
+      padding: 120px 40px 80px;
+      position: relative;
+      overflow: hidden;
+      background: radial-gradient(ellipse 80% 60% at 50% 40%, rgba(46,207,192,0.08) 0%, transparent 70%),
+                  radial-gradient(ellipse 40% 40% at 20% 80%, rgba(46,207,192,0.04) 0%, transparent 60%),
+                  var(--bg-deep);
+    }
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%232ECFC0' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      pointer-events: none;
+    }
+    .hero-meeting-tag {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--teal-dim); border: 1px solid var(--teal-border);
+      color: var(--teal-light); font-size: 12px; font-weight: 600;
+      letter-spacing: 1.5px; text-transform: uppercase;
+      padding: 8px 18px; border-radius: 30px;
+      margin-bottom: 32px;
+    }
+    .hero-meeting-tag .dot {
+      width: 6px; height: 6px; border-radius: 50%;
+      background: var(--teal); animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
