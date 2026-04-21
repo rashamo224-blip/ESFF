@@ -3,205 +3,198 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>ESFF — Equivator Saudi Fintech Fund | SVC Meeting</title>
 
-<!-- Fonts -->
+<!-- FIXED FONTS -->
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-:root{
-  --bg:#050F12;
-  --card:#0D2A30;
-  --card2:#0F3038;
+:root {
+  --bg-deep:#050F12;
+  --bg-card:#0D2A30;
   --teal:#2ECFC0;
-  --white:#fff;
-  --muted:#8AABB0;
+  --white:#FFFFFF;
+  --text-muted:#8AABB0;
 }
 
-body{
-  font-family:'Inter',sans-serif;
-  background:var(--bg);
-  color:var(--white);
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg-deep);
+  color: var(--white);
 }
 
 /* NAV */
-nav{
-  position:fixed;
-  top:0; left:0; right:0;
-  z-index:1000;
-  display:flex;
-  justify-content:space-between;
-  padding:18px 40px;
-  background:rgba(5,15,18,.9);
-  border-bottom:1px solid rgba(46,207,192,.2);
-}
-
-.logo{
-  font-family:'Playfair Display',serif;
-  font-weight:700;
-  font-size:20px;
+nav {
+  position: fixed;
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  background: rgba(5,15,18,0.9);
+  border-bottom: 1px solid rgba(46,207,192,0.2);
+  z-index: 100;
 }
 
 /* HERO */
-.hero{
-  min-height:100vh;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  text-align:center;
-  padding:120px 20px 80px;
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 40px 80px;
+  text-align: center;
+  position: relative;
 }
 
-.hero h1{
-  font-size:60px;
+/* IMPORTANT FIX — prevents blocking clicks */
+.hero::before {
+  content:'';
+  position:absolute;
+  inset:0;
+  pointer-events:none;
 }
 
-.hero span{color:var(--teal)}
-
-.hero p{
-  color:var(--muted);
-  margin:20px 0 40px;
+.hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 60px;
 }
 
-/* BUTTONS — FIXED CLICK ISSUE */
-.buttons{
-  position:relative;
-  z-index:9999;
+.hero-title span { color: var(--teal); }
+
+.hero-subtitle {
+  color: var(--text-muted);
+  margin: 20px 0 40px;
 }
 
-.buttons a{
-  display:inline-block;
-  padding:14px 28px;
-  margin:10px;
-  border-radius:6px;
-  font-weight:700;
-  text-decoration:none;
+/* BUTTONS — FULLY FIXED */
+.hero-cta-group {
+  position: relative;
+  z-index: 9999;
 }
 
-.primary{
-  background:var(--teal);
-  color:black;
+.btn-primary,
+.btn-secondary {
+  display: inline-block;
+  padding: 14px 28px;
+  margin: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
 }
 
-.secondary{
-  border:1px solid white;
-  color:white;
+.btn-primary {
+  background: var(--teal);
+  color: black;
+}
+
+.btn-secondary {
+  border: 1px solid white;
+  color: white;
+}
+
+/* AGENDA */
+.agenda-bar {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  border-top:1px solid rgba(46,207,192,0.2);
+  border-bottom:1px solid rgba(46,207,192,0.2);
+}
+
+.agenda-item {
+  padding: 0 20px;
+  font-size: 12px;
+  color: var(--text-muted);
 }
 
 /* SECTIONS */
-section{
-  padding:80px 40px;
-  max-width:1100px;
-  margin:auto;
+section {
+  padding: 80px 40px;
+  max-width: 1100px;
+  margin: auto;
 }
 
-h2{
-  font-family:'Playfair Display',serif;
-  margin-bottom:20px;
+.section-title {
+  font-family:'Playfair Display', serif;
+  font-size: 32px;
+  margin-bottom: 20px;
 }
 
-.card{
-  background:var(--card);
-  border:1px solid rgba(46,207,192,.2);
-  padding:20px;
-  border-radius:10px;
-  margin:10px 0;
-}
-
-/* GRID */
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:16px;
+.card {
+  background: var(--bg-card);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px 0;
 }
 
 /* FOOTER */
-footer{
-  padding:40px;
+footer {
   text-align:center;
-  border-top:1px solid rgba(46,207,192,.2);
-  color:var(--muted);
+  padding:40px;
+  border-top:1px solid rgba(46,207,192,0.2);
+  color:var(--text-muted);
 }
 </style>
 </head>
 
 <body>
 
-<!-- NAV -->
 <nav>
-  <div class="logo">
+  <div style="font-family:Playfair Display;font-weight:700;">
     EQUIVATOR<sup style="color:#2ECFC0;font-size:10px;">®</sup>
   </div>
 </nav>
 
 <!-- HERO -->
 <section class="hero">
-  <h1>Saudi FinTech <span>Fund</span></h1>
-  <p>Equivator Investment Platform — SVC Meeting</p>
+  <h1 class="hero-title">Saudi FinTech <span>Fund</span></h1>
+  <p class="hero-subtitle">Equivator Investment Platform — SVC Meeting</p>
 
-  <div class="buttons">
-    <!-- WORKING LINKS -->
-    <a href="pitch-deck.pdf" target="_blank" class="primary">Pitch Deck</a>
-    <a href="playbook.pdf" target="_blank" class="secondary">Playbook</a>
+  <div class="hero-cta-group">
+    <!-- ✅ FIXED LINKS -->
+    <a href="pitch-deck.pdf" target="_blank" class="btn-primary">Pitch Deck</a>
+    <a href="playbook.pdf" target="_blank" class="btn-secondary">Playbook</a>
   </div>
 </section>
 
-<!-- FUND OVERVIEW -->
+<!-- AGENDA -->
+<div class="agenda-bar">
+  <div class="agenda-item">Introduction</div>
+  <div class="agenda-item">Strategy</div>
+  <div class="agenda-item">Financials</div>
+  <div class="agenda-item">Deals</div>
+</div>
+
+<!-- SECTIONS -->
 <section>
-  <h2>Fund at a Glance</h2>
-  <div class="grid">
-    <div class="card">Fund Size: $100M</div>
-    <div class="card">Stage: Near-Series A / Series A</div>
-    <div class="card">Ticket: $5M–15M</div>
-    <div class="card">Region: Saudi / GCC</div>
-  </div>
+  <h2 class="section-title">Fund Overview</h2>
+  <div class="card">Fund Size: $100M</div>
+  <div class="card">Stage: Series A Focus</div>
+  <div class="card">Region: Saudi / GCC</div>
 </section>
 
-<!-- STRATEGY -->
 <section>
-  <h2>Fund Strategy</h2>
-  <div class="card">
-    Private equity–driven fintech strategy focused on operational intervention,
-    restructuring, and accelerated path to profitability within 9–12 months.
-  </div>
+  <h2 class="section-title">Strategy</h2>
+  <div class="card">Private equity-driven fintech growth strategy with operational intervention.</div>
 </section>
 
-<!-- FINANCIALS -->
 <section>
-  <h2>Financials & Fundraising</h2>
-  <div class="grid">
-    <div class="card">Target: $100M</div>
-    <div class="card">Deployment: Post first close</div>
-    <div class="card">Focus: High-conviction deals</div>
-    <div class="card">Model: Active value creation</div>
-  </div>
+  <h2 class="section-title">Pipeline</h2>
+  <div class="card">100+ deals screened annually</div>
+  <div class="card">2–5% conversion rate</div>
 </section>
 
-<!-- PIPELINE -->
 <section>
-  <h2>Deals Pipeline</h2>
-  <div class="grid">
-    <div class="card">100+ deals screened annually</div>
-    <div class="card">~37 pipeline deals</div>
-    <div class="card">20 shortlisted</div>
-    <div class="card">2–5% conversion</div>
-  </div>
+  <h2 class="section-title">Legal</h2>
+  <div class="card">CMA-approved fund managed by Apex FundRock</div>
 </section>
 
-<!-- LEGAL -->
-<section>
-  <h2>Legal & Structure</h2>
-  <div class="card">
-    CMA-approved private investment fund managed by Apex FundRock Investment Company.
-  </div>
-</section>
-
-<!-- FOOTER -->
 <footer>
-  Equivator © 2026 — Saudi-based investment firm executing PE strategies through funds and Corporate Finance Services.
+  Equivator © 2026 — Saudi-based investment firm executing PE strategies
 </footer>
 
 </body>
