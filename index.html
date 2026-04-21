@@ -1,100 +1,258 @@
-<!DOCTYPE html>
-<!-- saved from url=(0066)file:///Users/rashaabounamah/Downloads/Rhuna/ESFF_SVC_Meeting.html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ESFF — Equivator Saudi Fintech Fund | SVC Meeting</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    :root {
-      --bg-deep:    #050F12;
-      --bg-dark:    #071B20;
-      --bg-card:    #0D2A30;
-      --bg-card2:   #0F3038;
-      --teal:       #2ECFC0;
-      --teal-light: #5EEAE0;
-      --teal-dim:   rgba(46,207,192,0.15);
-      --teal-border:rgba(46,207,192,0.25);
-      --white:      #FFFFFF;
-      --text-muted: #8AABB0;
-      --text-body:  #C8DDE0;
-      --gold:       #E8C97A;
-    }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      font-family: 'Inter', sans-serif;
-      background: var(--bg-deep);
-      color: var(--white);
-      line-height: 1.6;
-      overflow-x: hidden;
-    }
-
-    /* ── NAVBAR ── */
-    nav {
-      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-      display: flex; align-items: center; justify-content: space-between;
-      padding: 18px 48px;
-      background: rgba(5,15,18,0.85);
-      backdrop-filter: blur(16px);
-      border-bottom: 1px solid var(--teal-border);
-    }
-    .nav-logo img {
-      height: 32px;
-      width: auto;
-      display: block;
-    }
-    .nav-logo img[alt="Apex"] { display: none; }
-    .nav-logo::after {
-      content: '';
-      display: block;
-      width: 116px;
-      height: 32px;
-      background: url("https://rashamo224-blip.github.io/ESFF/Apex%20Logo.svg") center / contain no-repeat;
-      filter: brightness(0) invert(1);
-    }
-    .nav-badge {
-      font-size: 11px; font-weight: 600; letter-spacing: 1.5px;
-      text-transform: uppercase; color: var(--teal);
-      border: 1px solid var(--teal-border);
-      padding: 4px 12px; border-radius: 20px;
-    }
-    .nav-right { display: flex; align-items: center; gap: 20px; }
-    .svc-logo-wrap {
-      display: flex; align-items: center; gap: 10px;
-      font-size: 11px; color: var(--text-muted); letter-spacing: 1px;
-      text-transform: uppercase;
-    }
-    .svc-logo-wrap img {
-      height: 28px; filter: brightness(0) invert(1) opacity(0.85);
-    }
-    .svc-logo-wrap img[alt="SVC"] { display: none; }
-    .svc-logo-wrap::before {
-      content: '';
-      display: block;
-      width: 84px;
-      height: 28px;
-      background: url("https://rashamo224-blip.github.io/ESFF/SVC%20logo.webp") center / contain no-repeat;
-      filter: brightness(0) invert(1) opacity(0.85);
-      flex-shrink: 0;
-    }
-    .svc-logo-text {
-      font-weight: 800; font-size: 18px; letter-spacing: 1px;
-      color: var(--white);
-    }
-
-    /* ── HERO ── */
-    .hero {
-      min-height: 100vh;
-      display: flex; flex-direction: column; justify-content: center; align-items: center;
-      text-align: center;
-      padding: 120px 40px 80px;
-      position: relative;
-      overflow: hidden;
-      background: radial-gradient(ellipse 80% 60% at 50% 40%, rgba(46,207,192,0.08) 0%, transparent 70%),
-                  radial-gradient(ellipse 40% 40% at 20% 80%, rgba(46,207,192,0.04) 0%, transparent 60%),
-                  var(--bg-deep);
-    }
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.4">
+  <style type="text/css">
+    body {background-color: #070d0f}
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 18.0px 'Helvetica Neue'; color: #2cc7b3; color: rgba(44, 199, 179, 0.35); -webkit-text-stroke: rgba(44, 199, 179, 0.35)}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px 'Helvetica Neue'; color: #789ba0; -webkit-text-stroke: #789ba0}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px 'Helvetica Neue'; color: #2cc7b3; -webkit-text-stroke: #2cc7b3}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px 'Helvetica Neue'; color: #52e7d8; -webkit-text-stroke: #52e7d8; background-color: #2cc7b3; min-height: 15.0px}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #52e7d8; -webkit-text-stroke: #52e7d8}
+    p.p8 {margin: 0.0px 0.0px 40.0px 0.0px; text-align: center; font: 16.0px 'Helvetica Neue'; color: #789ba0; -webkit-text-stroke: #789ba0}
+    p.p9 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 13.0px 'Helvetica Neue'; color: #bdd5d9; -webkit-text-stroke: #bdd5d9; background-color: #0d2024}
+    p.p10 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 13.0px 'Helvetica Neue'; color: #2cc7b3; -webkit-text-stroke: #2cc7b3; background-color: #0d2024}
+    p.p11 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px 'Helvetica Neue'; color: #070d0f; -webkit-text-stroke: #070d0f}
+    p.p12 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 11.0px 'Helvetica Neue'; color: #789ba0; -webkit-text-stroke: #789ba0}
+    p.p13 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 11.0px 'Helvetica Neue'; color: #789ba0; -webkit-text-stroke: #789ba0; min-height: 13.0px}
+    p.p14 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #bdd5d9; -webkit-text-stroke: #bdd5d9}
+    p.p16 {margin: 0.0px 0.0px 48.0px 0.0px; font: 15.0px 'Helvetica Neue'; color: #bdd5d9; -webkit-text-stroke: #bdd5d9}
+    p.p17 {margin: 0.0px 0.0px 0.0px 0.0px; font: 18.0px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff}
+    p.p18 {margin: 0.0px 0.0px 0.0px 0.0px; font: 18.0px 'Helvetica Neue'; color: #2cc7b3; -webkit-text-stroke: #2cc7b3}
+    p.p19 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px 'Helvetica Neue'; color: #789ba0; -webkit-text-stroke: #789ba0}
+    p.p20 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff}
+    p.p21 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff; min-height: 15.0px}
+    p.p22 {margin: 0.0px 0.0px 16.0px 0.0px; font: 15.0px 'Helvetica Neue'; color: #bdd5d9; -webkit-text-stroke: #bdd5d9}
+    p.p23 {margin: 0.0px 0.0px 0.0px 0.0px; font: 20.0px '.Apple Color Emoji UI'; color: #ffffff; -webkit-text-stroke: #ffffff}
+    p.p24 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #789ba0; -webkit-text-stroke: #789ba0}
+    p.p25 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 36.0px 'Helvetica Neue'; color: #2cc7b3; -webkit-text-stroke: #2cc7b3}
+    p.p26 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px 'Helvetica Neue'; color: #bdd5d9; -webkit-text-stroke: #bdd5d9}
+    p.p27 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px 'Helvetica Neue'; color: #bdd5d9; -webkit-text-stroke: #bdd5d9}
+    p.p28 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px 'Helvetica Neue'; color: #070d0f; -webkit-text-stroke: #070d0f}
+    p.p29 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px 'Helvetica Neue'; color: #070d0f; -webkit-text-stroke: #070d0f; background-color: #2cc7b3}
+    p.p30 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff; min-height: 16.0px}
+    p.p31 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff}
+    p.p32 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 32.0px 'Helvetica Neue'; color: #2cc7b3; -webkit-text-stroke: #2cc7b3}
+    p.p33 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px 'Helvetica Neue'; color: #789ba0; -webkit-text-stroke: #789ba0}
+    p.p34 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 22.0px 'Helvetica Neue'; color: #2cc7b3; -webkit-text-stroke: #2cc7b3}
+    p.p35 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px 'Helvetica Neue'; color: #2cc7b3; -webkit-text-stroke: #2cc7b3}
+    p.p36 {margin: 0.0px 0.0px 24.0px 0.0px; font: 14.0px 'Helvetica Neue'; color: #bdd5d9; -webkit-text-stroke: #bdd5d9}
+    p.p37 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Helvetica Neue'; color: #2cc7b3; -webkit-text-stroke: #2cc7b3; background-color: #2cc7b3; background-color: rgba(44, 199, 179, 0.15)}
+    p.p38 {margin: 0.0px 0.0px 0.0px 0.0px; font: 17.0px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff}
+    p.p39 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff; background-color: #2cc7b3; background-color: rgba(44, 199, 179, 0.25); min-height: 15.0px}
+    p.p40 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.0px 'Helvetica Neue'; color: #789ba0; -webkit-text-stroke: #789ba0}
+    p.p41 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff; min-height: 15.0px}
+    p.p42 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 11.0px 'Helvetica Neue'; color: #2cc7b3; -webkit-text-stroke: #2cc7b3}
+    p.p43 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 36.0px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff}
+    p.p44 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px 'Helvetica Neue'; color: #2cc7b3; -webkit-text-stroke: #2cc7b3; background-color: #2cc7b3; background-color: rgba(44, 199, 179, 0.25); min-height: 16.0px}
+    p.p46 {margin: 0.0px 0.0px 28.0px 0.0px; text-align: center; font: 14.0px 'Helvetica Neue'; color: #bdd5d9; -webkit-text-stroke: #bdd5d9}
+    p.p47 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 15.0px 'Helvetica Neue'; color: #070d0f; -webkit-text-stroke: #070d0f}
+    p.p48 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #2cc7b3; -webkit-text-stroke: #2cc7b3}
+    span.s1 {font-kerning: none}
+    span.s2 {font-kerning: none; background-color: rgba(7, 13, 15, 0.85)}
+    span.s3 {font-kerning: none; background-color: rgba(44, 199, 179, 0.15)}
+    span.s4 {font-kerning: none; background-color: #070d0f}
+    span.s5 {font-kerning: none; color: #2cc7b3; background-color: #070d0f; -webkit-text-stroke: 0px #2cc7b3}
+    span.s6 {font: 13.0px '.Apple Color Emoji UI'; font-kerning: none}
+    span.s7 {font-kerning: none; color: #2cc7b3; -webkit-text-stroke: 0px #2cc7b3}
+    span.s8 {font: 13.0px '.Apple Color Emoji UI'; font-kerning: none; color: #bdd5d9; -webkit-text-stroke: 0px #bdd5d9}
+    span.s9 {font-kerning: none; color: #bdd5d9; -webkit-text-stroke: 0px #bdd5d9}
+    span.s10 {font: 14.0px '.Apple Color Emoji UI'; font-kerning: none; background-color: #2cc7b3}
+    span.s11 {font: 14.0px 'Helvetica Neue'; font-kerning: none}
+    span.s12 {font-kerning: none; color: #ffffff; background-color: #070d0f; -webkit-text-stroke: 0px #ffffff}
+    span.s13 {font-kerning: none; background-color: #0d2024}
+    span.s14 {font-kerning: none; color: #2cc7b3; background-color: #0d2024; -webkit-text-stroke: 0px #2cc7b3}
+    span.s15 {font: 18.0px 'Helvetica Neue'; font-kerning: none; color: #ffffff; background-color: #0d2024; -webkit-text-stroke: 0px #ffffff}
+    span.s16 {font-kerning: none; color: #ffffff; background-color: #0d2024; -webkit-text-stroke: 0px #ffffff}
+    span.s17 {font: 18.0px '.Apple Color Emoji UI'; font-kerning: none; color: #2cc7b3; background-color: #0d2024; -webkit-text-stroke: 0px #2cc7b3}
+    span.s18 {font-kerning: none; color: #ffffff; -webkit-text-stroke: 0px #ffffff}
+    span.s19 {font: 20.0px '.Apple Color Emoji UI'; font-kerning: none; color: #ffffff; -webkit-text-stroke: 0px #ffffff}
+    span.s20 {font: 14.0px 'Helvetica Neue'; font-kerning: none; color: #ffffff; -webkit-text-stroke: 0px #ffffff}
+    span.s21 {font-kerning: none; color: #789ba0; -webkit-text-stroke: 0px #789ba0}
+    span.s22 {font: 18.0px 'Helvetica Neue'; font-kerning: none; color: #2cc7b3; -webkit-text-stroke: 0px #2cc7b3}
+    span.s23 {font: 13.0px '.Apple Color Emoji UI'; font-kerning: none; background-color: #2cc7b3}
+    span.s24 {font-kerning: none; background-color: #2cc7b3}
+    span.s25 {font: 13.0px 'Helvetica Neue'; font-kerning: none}
+    span.s26 {font: 13.0px 'Helvetica Neue'; font-kerning: none; color: #2cc7b3; -webkit-text-stroke: 0px #2cc7b3}
+    span.s27 {font: 24.0px '.Apple Color Emoji UI'; font-kerning: none}
+    span.s28 {font: 15.0px '.Apple Color Emoji UI'; font-kerning: none; background-color: #2cc7b3}
+    span.s29 {font: 15.0px 'Helvetica Neue'; font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1"><img src="file:///Equivator%20Logo-05.png" alt="Equivator Logo-05.png"></span></p>
+<p class="p2"><span class="s2">×</span></p>
+<p class="p3"><span class="s2">PREPARED FOR</span></p>
+<p class="p4"><span class="s2">CONFIDENTIAL</span></p>
+<p class="p5"><span class="s1"></span><br></p>
+<p class="p6"><span class="s3">MEETING BRIEF — SAUDI VENTURE CAPITAL COMPANY</span></p>
+<h1 style="margin: 0.0px 0.0px 8.0px 0.0px; text-align: center; font: 48.0px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s4">Equivator Saudi</span><span class="s1"><br>
+</span><span class="s5">FinTech Fund</span></h1>
+<p class="p8"><span class="s4">A CMA-regulated, Shariah-compliant private fund targeting high-growth fintech companies in Saudi Arabia</span></p>
+<p class="p9"><span class="s6">🎯</span><span class="s1"> Target: </span><span class="s7">USD 100M</span></p>
+<p class="p9"><span class="s6">📅</span><span class="s1"> First Close: </span><span class="s7">June 2026</span></p>
+<p class="p9"><span class="s6">☪️</span><span class="s1"> Shariah </span><span class="s7">Compliant</span></p>
+<p class="p9"><span class="s6">🏛️</span><span class="s1"> Regulated by </span><span class="s7">CMA</span></p>
+<p class="p10"><span class="s8">📋</span><span class="s9"> Fund No. </span><span class="s1">4107-2-12-005</span></p>
+<p class="p11"><span class="s10"><a href="https://rashamo224-blip.github.io/ESFF/pitch-deck.pdf">🔗<span class="s11"> View Pitch Deck </span></a></span><span class="s12">Explore Fund ↓</span></p>
+<p class="p12"><span class="s4">SCROLL</span></p>
+<p class="p13"><span class="s1"></span><br></p>
+<p class="p4"><span class="s3">1</span></p>
+<p class="p14"><span class="s13">Introduction</span></p>
+<p class="p4"><span class="s3">2</span></p>
+<p class="p14"><span class="s13">Fund Strategy</span></p>
+<p class="p4"><span class="s3">3</span></p>
+<p class="p14"><span class="s13">Financials &amp; Fundraising</span></p>
+<p class="p4"><span class="s3">4</span></p>
+<p class="p14"><span class="s13">Deals Pipeline</span></p>
+<p class="p4"><span class="s3">5</span></p>
+<p class="p14"><span class="s13">Legal</span></p>
+<p class="p4"><span class="s1">01 — INTRODUCTION</span></p>
+<h2 style="margin: 0.0px 0.0px 16.0px 0.0px; font: 28.0px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s1">About the Fund</span></h2>
+<p class="p16"><span class="s1">The Equivator Saudi FinTech Fund (ESFF) is a CMA-regulated, Shariah-compliant private equity fund focused exclusively on fintech in Saudi Arabia. We operate at the Series A inflection point — combining structured capital with operational intervention to drive institutional-grade returns.</span></p>
+<p class="p3"><span class="s13">TARGET FUND SIZE</span></p>
+<p class="p17"><span class="s14">USD 100M</span><span class="s13"> (20 → 50 → 100)</span></p>
+<p class="p3"><span class="s13">MINIMUM SUBSCRIPTION</span></p>
+<p class="p18"><span class="s13">USD 250,000</span></p>
+<p class="p3"><span class="s13">FUND TERM</span></p>
+<p class="p19"><span class="s15">8 Years </span><span class="s13">(extendable to 10)</span></p>
+<p class="p3"><span class="s13">FIRST CLOSING TARGET</span></p>
+<p class="p17"><span class="s14">June 2026</span><span class="s13"> — USD 20M min.</span></p>
+<p class="p3"><span class="s13">INVESTMENT STAGE</span></p>
+<p class="p17"><span class="s13">Near-Series A &amp; </span><span class="s14">Series A</span></p>
+<p class="p3"><span class="s13">TICKET SIZE</span></p>
+<p class="p18"><span class="s13">USD 8M – 15M</span><span class="s16"> per deal</span></p>
+<p class="p3"><span class="s13">TARGET OWNERSHIP</span></p>
+<p class="p17"><span class="s14">15–25%</span><span class="s13"> avg. (up to 35%)</span></p>
+<p class="p3"><span class="s13">PORTFOLIO TARGET</span></p>
+<p class="p17"><span class="s13">Up to </span><span class="s14">10</span><span class="s13"> high-conviction investments</span></p>
+<p class="p3"><span class="s13">GEOGRAPHY</span></p>
+<p class="p17"><span class="s14">KSA-primary</span><span class="s13">; GCC up to 20%</span></p>
+<p class="p3"><span class="s13">ELIGIBLE INVESTORS</span></p>
+<p class="p20"><span class="s13">Institutional, SWFs, Private Offices, HNW</span></p>
+<p class="p3"><span class="s13">SHARIAH COMPLIANCE</span></p>
+<p class="p17"><span class="s17">✅</span><span class="s14"> Certified</span><span class="s13"> — Shariah Review Bureau</span></p>
+<p class="p3"><span class="s13">REGULATED BY</span></p>
+<p class="p17"><span class="s14">CMA</span><span class="s13"> Saudi Arabia</span></p>
+<p class="p21"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">02 — FUND STRATEGY</span></p>
+<h2 style="margin: 0.0px 0.0px 16.0px 0.0px; font: 28.0px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s1">Investment Thesis &amp; Approach</span></h2>
+<p class="p22"><span class="s1">The Equivator Saudi FinTech Fund targets high-growth Near-Series A and Series A fintech companies in Saudi Arabia, with selective GCC exposure. We operate as a </span><span class="s18">PE-discipline Fixer</span><span class="s1"> — not a passive minority investor.</span></p>
+<p class="p22"><span class="s1">Every investment comes with dedicated operational professionals (CFO, legal, BD) deployed directly into portfolio companies. Our 30/60/90-day intervention framework accelerates profitability, governance, and exit readiness within months — not years.</span></p>
+<p class="p22"><span class="s1">The fund takes </span><span class="s7">15–25% average ownership</span><span class="s1"> through a hybrid equity and debt structure, targeting an IRR of </span><span class="s7">18–20%</span><span class="s1"> and a </span><span class="s7">3× MOIC</span><span class="s1"> over an 8-year term.</span></p>
+<p class="p23"><span class="s3"><a href="https://rashamo224-blip.github.io/ESFF/pitch-deck.pdf">📊<span class="s19"></span></a></span></p>
+<p class="p20"><span class="s13"><a href="https://rashamo224-blip.github.io/ESFF/pitch-deck.pdf">Full Pitch Deck<span class="s20"></span></a></span></p>
+<p class="p24"><span class="s13"><a href="https://rashamo224-blip.github.io/ESFF/pitch-deck.pdf">Equivator Saudi FinTech Fund — Apr 2026<span class="s21"></span></a></span></p>
+<p class="p18"><span class="s13"><a href="https://rashamo224-blip.github.io/ESFF/pitch-deck.pdf">→<span class="s22"></span></a></span></p>
+<p class="p23"><span class="s3"><a href="https://rashamo224-blip.github.io/ESFF/playbook.pdf">📋<span class="s19"></span></a></span></p>
+<p class="p20"><span class="s13"><a href="https://rashamo224-blip.github.io/ESFF/playbook.pdf">Fixer Playbook<span class="s20"></span></a></span></p>
+<p class="p24"><span class="s13"><a href="https://rashamo224-blip.github.io/ESFF/playbook.pdf">30 / 60 / 90-Day Post-Investment Framework<span class="s21"></span></a></span></p>
+<p class="p18"><span class="s13"><a href="https://rashamo224-blip.github.io/ESFF/playbook.pdf">→<span class="s22"></span></a></span></p>
+<p class="p21"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">03 — FINANCIALS &amp; FUNDRAISING</span></p>
+<h2 style="margin: 0.0px 0.0px 16.0px 0.0px; font: 28.0px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s1">Return Targets &amp; LP Status</span></h2>
+<p class="p12"><span class="s13">TARGET IRR</span></p>
+<p class="p25"><span class="s13">18–20%</span></p>
+<p class="p26"><span class="s13">Rapid value creation &amp; shorter hold periods</span></p>
+<p class="p12"><span class="s13">TARGET MOIC</span></p>
+<p class="p25"><span class="s13">~3×</span></p>
+<p class="p26"><span class="s13">Total money multiple on invested capital</span></p>
+<p class="p12"><span class="s13">TARGET DPI</span></p>
+<p class="p25"><span class="s13">&gt;2×</span></p>
+<p class="p26"><span class="s13">Profitable exits + debt income</span></p>
+<p class="p12"><span class="s13">PREFERRED RETURN</span></p>
+<p class="p25"><span class="s13">8%</span></p>
+<p class="p26"><span class="s13">Hurdle rate for Class A unit holders</span></p>
+<p class="p27"><span class="s1">We are currently in </span><span class="s18">active LP engagement</span><span class="s1">. A number of qualified investors have expressed formal interest.</span></p>
+<p class="p27"><span class="s1">Waterfall: </span><span class="s18">American</span><span class="s1"> — Return of Capital → 8% Preferred Return → Catch-Up → 80/20 Split | Carry: </span><span class="s18">20%</span><span class="s1"> above hurdle</span></p>
+<p class="p28"><span class="s23">🗓️</span><span class="s24"> First Close: USD 20M</span></p>
+<p class="p29"><span class="s1">June 2026</span></p>
+<p class="p28"><span class="s23"><a href="https://equivator-my.sharepoint.com/:x:/p/dc/IQAhI6QtnIftTKT5vNDF3JkiAeFrr7D654tf6il_utIX5v8?e=ksocVS">📊<span class="s25"> View Financials →</span></a></span></p>
+<p class="p30"><span class="s1"><a href="https://www.notion.so/342ad185bb6b80f6af3cdc3c629ef386"></a></span><br></p>
+<p class="p31"><span class="s1"><a href="https://www.notion.so/342ad185bb6b80f6af3cdc3c629ef386">Open Fundraising Dashboard →<span class="s25"></span></a></span></p>
+<p class="p21"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">04 — DEALS PIPELINE</span></p>
+<h2 style="margin: 0.0px 0.0px 16.0px 0.0px; font: 28.0px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s1">Live Deal Flow Dashboard</span></h2>
+<p class="p16"><span class="s1">Equivator applies rigorous proprietary screening to identify the highest-conviction fintech investments at the near-Series A gap. ~100 deals screened → ~37 sourced → 20 shortlisted for DD → 4 full DD processes → 2–5% conversion rate. Tickets: USD 8M–15M across ~10 fintech investees. Capital deployed post first closing — June 2026.</span></p>
+<p class="p32"><span class="s13">~100</span></p>
+<p class="p33"><span class="s13">Deals Screened Annually</span></p>
+<p class="p32"><span class="s13">~37</span></p>
+<p class="p33"><span class="s13">Sourced into Pipeline</span></p>
+<p class="p32"><span class="s13">20</span></p>
+<p class="p33"><span class="s13">Shortlisted for DD</span></p>
+<p class="p32"><span class="s13">2–5%</span></p>
+<p class="p33"><span class="s13">Final Conversion Rate</span></p>
+<p class="p34"><span class="s13">~100</span></p>
+<p class="p12"><span class="s13">Screened</span></p>
+<p class="p34"><span class="s13">~37</span></p>
+<p class="p12"><span class="s13">Sourced</span></p>
+<p class="p34"><span class="s13">20</span></p>
+<p class="p12"><span class="s13">Shortlisted for DD</span></p>
+<p class="p34"><span class="s13">4</span></p>
+<p class="p12"><span class="s13">Full DD Processes</span></p>
+<p class="p34"><span class="s13">5–8</span></p>
+<p class="p12"><span class="s13">Final Portfolio</span></p>
+<p class="p30"><span class="s1"><a href="https://www.notion.so/equivator/Deals-Pipeline-2b3ad185bb6b8084b886f40a6f432360?source=copy_link"></a></span><br></p>
+<p class="p35"><span class="s18"><a href="https://www.notion.so/equivator/Deals-Pipeline-2b3ad185bb6b8084b886f40a6f432360?source=copy_link">Open Live Deal Flow Dashboard → </a></span><span class="s6">🔍</span><span class="s1"> COMPANIES THAT HAVE PASSED IC DUE DILIGENCE</span></p>
+<p class="p36"><span class="s1">The following four companies have completed </span><span class="s18">full IC due diligence</span><span class="s1">. Capital deploys upon first fund closing. Full DD reports and IC memos available in the secured dataroom upon NDA and LOI execution.</span></p>
+<p class="p37"><span class="s1">PASSED IC DD</span></p>
+<p class="p38"><span class="s13">Rhuna</span></p>
+<p class="p24"><span class="s13">Fintech / Embedded Finance</span></p>
+<p class="p39"><span class="s1"></span><br></p>
+<p class="p40"><span class="s13">STAGE</span></p>
+<p class="p31"><span class="s13">Series A</span></p>
+<p class="p40"><span class="s13">WEBSITE</span></p>
+<p class="p35"><span class="s13"><a href="https://rhuna.io/">rhuna.io ↗<span class="s26"></span></a></span></p>
+<p class="p37"><span class="s1">PASSED IC DD</span></p>
+<p class="p38"><span class="s13">Rize</span></p>
+<p class="p24"><span class="s13">Fintech / Earned Wage Access</span></p>
+<p class="p39"><span class="s1"></span><br></p>
+<p class="p40"><span class="s13">STAGE</span></p>
+<p class="p31"><span class="s13">Seed</span></p>
+<p class="p40"><span class="s13">WEBSITE</span></p>
+<p class="p35"><span class="s13"><a href="https://rize.sa/">rize.sa ↗<span class="s26"></span></a></span></p>
+<p class="p37"><span class="s1">PASSED IC DD</span></p>
+<p class="p38"><span class="s13">Related Group</span></p>
+<p class="p24"><span class="s13">Fintech / Embedded Finance</span></p>
+<p class="p39"><span class="s1"></span><br></p>
+<p class="p40"><span class="s13">STAGE</span></p>
+<p class="p31"><span class="s13">Growth</span></p>
+<p class="p40"><span class="s13">WEBSITE</span></p>
+<p class="p35"><span class="s13"><a href="https://related.me/">related.me ↗<span class="s26"></span></a></span></p>
+<p class="p37"><span class="s1">PASSED IC DD</span></p>
+<p class="p38"><span class="s13">Rakeez Capital</span></p>
+<p class="p24"><span class="s13">Fintech / Debt Instruments</span></p>
+<p class="p39"><span class="s1"></span><br></p>
+<p class="p40"><span class="s13">STAGE</span></p>
+<p class="p31"><span class="s13">Pre A</span></p>
+<p class="p40"><span class="s13">WEBSITE</span></p>
+<p class="p35"><span class="s13"><a href="https://rakeez.sa/">rakeez.sa ↗<span class="s26"></span></a></span></p>
+<p class="p30"><span class="s1"><a href="https://www.notion.so/equivator/342ad185bb6b80509926c072f8370ab1?v=342ad185bb6b804a9b68000c5a61ccd8"></a></span><br></p>
+<p class="p31"><span class="s1"><a href="https://www.notion.so/equivator/342ad185bb6b80509926c072f8370ab1?v=342ad185bb6b804a9b68000c5a61ccd8">Open Live IC Portfolio Dashboard →<span class="s25"></span></a></span></p>
+<p class="p21"><span class="s1"></span><br></p>
+<p class="p4"><span class="s1">05 — LEGAL</span></p>
+<h2 style="margin: 0.0px 0.0px 16.0px 0.0px; font: 28.0px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s1">Fund Legality &amp; Governance</span></h2>
+<p class="p16"><span class="s1">The fund is fully regulated, Shariah-certified, and governed under institutional-grade frameworks aligned with CMA requirements.</span></p>
+<p class="p41"><span class="s1"></span><br></p>
+<p class="p42"><span class="s13">CMA FUND REGISTRATION</span></p>
+<p class="p43"><span class="s13">4107-2-12-005</span></p>
+<p class="p33"><span class="s13">Capital Market Authority · Saudi Arabia</span></p>
+<p class="p35"><span class="s1">FUND GOVERNANCE STRUCTURE</span></p>
+<p class="p44"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><img src="file:///Attachment.png" alt="Attachment.png"></span></p>
+<h3 style="margin: 0.0px 0.0px 12.0px 0.0px; text-align: center; font: 24.0px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s27">📄</span><span class="s1"> Fund Terms &amp; Conditions</span></h3>
+<p class="p46"><span class="s1">Review the official Terms &amp; Conditions of the Equivator Saudi FinTech Fund before proceeding with a commitment. Available in English.</span></p>
+<p class="p47"><span class="s28"><a href="https://equivator-my.sharepoint.com/personal/dc_equivator_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fdc%5Fequivator%5Fcom%2FDocuments%2FManagement%2FEquivator%20Invest%2FEquivator%20Fund%2FEquivator%20Fintech%20Fund%2F01%2E%20Equivator%C2%AEFintech%20Fund%20Data%20Room%2FEquivator%C2%AEFintech%20Fund%20IC%20Data%20Room%2F04%2E%20EQ%20Saudi%20Fintech%20Fund%5FLegal%20Doc%2F01%2E%20ESFF%20Terms%20%26%20Conditions%20%28English%29%2Epdf&amp;parent=%2Fpersonal%2Fdc%5Fequivator%5Fcom%2FDocuments%2FManagement%2FEquivator%20Invest%2FEquivator%20Fund%2FEquivator%20Fintech%20Fund%2F01%2E%20Equivator%C2%AEFintech%20Fund%20Data%20Room%2FEquivator%C2%AEFintech%20Fund%20IC%20Data%20Room%2F04%2E%20EQ%20Saudi%20Fintech%20Fund%5FLegal%20Doc&amp;ga=1">🔗<span class="s29"> Access Fund Terms &amp; Conditions (English) →</span></a></span></p>
+<h3 style="margin: 0.0px 0.0px 12.0px 0.0px; text-align: center; font: 24.0px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #ffffff"><span class="s27">📝</span><span class="s1"> Subscription Agreement</span></h3>
+<p class="p46"><span class="s1">To proceed with a commitment to the Equivator Saudi FinTech Fund, please complete the official subscription agreement. Available in English and Arabic.</span></p>
+<p class="p47"><span class="s28"><a href="https://equivator-my.sharepoint.com/personal/dc_equivator_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fdc%5Fequivator%5Fcom%2FDocuments%2FManagement%2FEquivator%20Invest%2FEquivator%20Fund%2FEquivator%20Fintech%20Fund%2F01%2E%20Equivator%C2%AEFintech%20Fund%20Data%20Room%2FEquivator%C2%AEFintech%20Fund%20IC%20Data%20Room%2F04%2E%20EQ%20Saudi%20Fintech%20Fund%5FLegal%20Doc%2F02%2E%20ESFF%20Subscription%20form%20%28English%5FArabic%29%2Epdf&amp;parent=%2Fpersonal%2Fdc%5Fequivator%5Fcom%2FDocuments%2FManagement%2FEquivator%20Invest%2FEquivator%20Fund%2FEquivator%20Fintech%20Fund%2F01%2E%20Equivator%C2%AEFintech%20Fund%20Data%20Room%2FEquivator%C2%AEFintech%20Fund%20IC%20Data%20Room%2F04%2E%20EQ%20Saudi%20Fintech%20Fund%5FLegal%20Doc&amp;ga=1">🔗<span class="s29"> Access Subscription Form (English / Arabic) →</span></a></span></p>
+<p class="p17"><span class="s1"><img src="file:///Equivator%20Logo-05.png" alt="Equivator Logo-05.png"></span></p>
+<p class="p3"><span class="s13">This document is for informational purposes only and does not constitute an offer to buy or sell any investment. Distributed under CMA regulations to qualified investors only. Shared under NDA — do not distribute without written consent from Equivator.</span></p>
+<p class="p48"><span class="s13"><a href="https://equivator.com/">equivator.com ↗<span class="s7"></span></a></span></p>
+</body>
+</html>
